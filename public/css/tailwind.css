@@ -837,6 +837,18 @@ h1 {
   margin-right: 1rem !important;
 }
 
+.ml-8 {
+  margin-left: 2rem !important;
+}
+
+.ml-0 {
+  margin-left: 0px !important;
+}
+
+.mr-0 {
+  margin-right: 0px !important;
+}
+
 .block {
   display: block !important;
 }
@@ -1189,6 +1201,10 @@ h1 {
   padding-bottom: 2rem !important;
 }
 
+.pr-32 {
+  padding-right: 8rem !important;
+}
+
 .text-left {
   text-align: left !important;
 }
@@ -1359,6 +1375,22 @@ h1 {
 
 @media (min-width: 640px) {
 
+  .sm\:ml-0 {
+    margin-left: 0px !important;
+  }
+
+  .sm\:mr-0 {
+    margin-right: 0px !important;
+  }
+
+  .sm\:ml-12 {
+    margin-left: 3rem !important;
+  }
+
+  .sm\:mr-12 {
+    margin-right: 3rem !important;
+  }
+
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
   }
@@ -1405,6 +1437,14 @@ h1 {
     margin-right: 2.5rem !important;
   }
 
+  .md\:ml-12 {
+    margin-left: 3rem !important;
+  }
+
+  .md\:mr-12 {
+    margin-right: 3rem !important;
+  }
+
   .md\:block {
     display: block !important;
   }
@@ -1434,6 +1474,10 @@ h1 {
 
   .lg\:mt-0 {
     margin-top: 0px !important;
+  }
+
+  .lg\:ml-12 {
+    margin-left: 3rem !important;
   }
 
   .lg\:inline-block {
