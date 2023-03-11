@@ -8,7 +8,6 @@ sections:
         field:
           character_limit: 0
           type: text
-          localizable: false
           display: 'Site Name'
       -
         handle: social
@@ -18,14 +17,12 @@ sections:
               handle: name
               field:
                 type: text
-                localizable: false
                 display: Name
             -
               handle: url
               field:
                 character_limit: 0
                 type: text
-                localizable: false
                 display: URL
             -
               handle: icon
@@ -37,12 +34,13 @@ sections:
                 allow_uploads: true
                 max_files: 1
                 type: assets
-                localizable: false
                 display: Icon
-          mode: table
+          mode: stacked
           add_row: 'Add Link'
           reorderable: true
           type: grid
           instructions: 'Set any social media links'
-          localizable: false
           display: Social
+          instructions_position: above
+          listable: hidden
+          visibility: visible

@@ -6,12 +6,12 @@
 </div>
 
 <div class="max-w-2xl mx-auto mb-32">
-    {{ collection:articles limit="5" as="articles" }}
+    {{ collection:news limit="5" as="news" }}
         {{ if no_results }}
             <h2 class="text-3xl italic tracking-tight">Feel the rhythm! Feel the rhyme! Get on up, it's writing time! Cool writings!</h2>
         {{ /if }}
 
-        {{ articles }}
+        {{ news }}
             <div class="mb-16">
                 <h2 class="mb-4">
                     <a href="{{ url }}" class="text-2xl hover:text-teal tracking-tight leading-tight font-bold">
@@ -23,6 +23,6 @@
                     {{ excerpt | widont ?? content | strip_tags | safe_truncate(150, '...') }}
                 </p>
             </div>
-        {{ /articles }}
-    {{ /collection:articles }}
+        {{ /news }}
+    {{ /collection:news }}
 </div>

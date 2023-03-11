@@ -1,0 +1,96 @@
+title: 'Page - Route'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          character_limit: 0
+          display: Title
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: true
+          smartypants: false
+          type: markdown
+          display: Content
+      -
+        handle: schedule_nl_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Schedule The Netherlands title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: schedule_nl
+        field:
+          display: 'Schedule The Netherlands'
+          type: table
+          icon: table
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: schedule_de_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Schedule Germany title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: schedule_de
+        field:
+          display: 'Schedule Germany'
+          type: table
+          icon: table
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: route_code
+        field:
+          antlers: false
+          display: 'Route iframe code'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

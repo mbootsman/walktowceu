@@ -1,0 +1,72 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: subtitle
+        field:
+          input_type: text
+          antlers: false
+          display: Subtitle
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: logo
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: Logo
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - sponsors
+          max_items: 1
+          listable: false
+          localizable: true
+      -
+        handle: sponsor_level
+        field:
+          type: terms
+          taxonomies:
+            - sponsor_level
+          display: 'Sponsor Level'
+          mode: select
+          create: true
+          icon: taxonomy
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+title: Sponsor

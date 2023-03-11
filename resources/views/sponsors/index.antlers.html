@@ -1,0 +1,29 @@
+<div class="max-w-5xl mx-auto relative mt-16">
+    <article class="py-8 max-w-5xl mx-auto">
+        <header class="max-w-xl content">
+            <h1 class="mb-4">Sponsors</h1>
+        </header>
+        {{ collection:sponsors as="sponsors" }}
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 py-8">
+            {{ sponsors }}
+            <a href="{{ url }}" class="transition-all duration-75 ease-in-out h-full block relative top-0 hover:-top-2 shadow-lg hover:shadow-xl bg-white rounded-xl overflow-hidden">
+                {{ logo }}
+                <img class="squiggle" height="285" src="{{ url }}" alt="{{ alt }}" />
+                {{ /logo }}
+                <div class="py-6 px-8">
+                    <h2 class="font-bold text-2xl leading-tight">
+                        {{ title }}
+                    </h2>
+                    <h3 class="font-bold text-2xl leading-tight">
+                        {{ subtitle }}
+                    </h3>
+                    <p class="text-xs text-gray-600 mt-4 flex items-center">
+                        {{ content }}
+                    </p>
+                </div>
+            </a>
+            {{ /sponsors }}
+        </section>
+        {{ /collection:sponsors }}
+    </article>
+</div>

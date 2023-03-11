@@ -21,20 +21,7 @@ sections:
         handle: slug
         field:
           type: slug
-          localizable: true
-      -
-        handle: date
-        field:
-          type: date
           required: true
           validate:
             - required
-      -
-        handle: topics
-        field:
-          type: terms
-          taxonomies:
-            - topics
-          display: Topics
-          mode: select
-title: News
+title: sponsors

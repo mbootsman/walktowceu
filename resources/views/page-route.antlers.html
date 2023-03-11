@@ -1,0 +1,67 @@
+<div class="max-w-5xl mx-auto relative mt-16 content">
+    <article class="py-8 max-w-5xl mx-auto content">
+        <h1>{{ title }}</h1>
+        {{ content | widont }}
+
+        <h2>{{ schedule_nl_title }}</h2>
+        <table>
+            {{ schedule_nl }}
+            {{ if first && first_row_headers }}
+            <thead>
+                <tr>
+                    {{ cells }}
+                    <th>{{ value|markdown }}</th>
+                    {{ /cells }}
+                </tr>
+            </thead>
+            <tbody>
+                {{ /if }}
+                {{ if !first && first_row_headers || !first_row_headers }}
+                {{ if first }}
+            <tbody>
+                {{ /if }}
+                <tr>
+                    {{ cells }}
+                    <td>{{ value|markdown }}</td>
+                    {{ /cells }}
+                </tr>
+                {{ if last }}
+            </tbody>
+            {{ /if }}
+            {{ /if }}
+            {{ /schedule_nl }}
+        </table>
+
+        <h2>{{ schedule_de_title }}</h2>
+        <table>
+            {{ schedule_de }}
+            {{ if first && first_row_headers }}
+            <thead>
+                <tr>
+                    {{ cells }}
+                    <th>{{ value|markdown }}</th>
+                    {{ /cells }}
+                </tr>
+            </thead>
+            <tbody>
+                {{ /if }}
+                {{ if !first && first_row_headers || !first_row_headers }}
+                {{ if first }}
+            <tbody>
+                {{ /if }}
+                <tr>
+                    {{ cells }}
+                    <td>{{ value|markdown }}</td>
+                    {{ /cells }}
+                </tr>
+                {{ if last }}
+            </tbody>
+            {{ /if }}
+            {{ /if }}
+            {{ /schedule_de }}
+        </table>
+
+        <h2>Route</h2>
+        <iframe style='border:none' width='100%' height='500px' src="{{ route_code }}"></iframe>
+    </article>
+</div>

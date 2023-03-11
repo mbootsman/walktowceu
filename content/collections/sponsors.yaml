@@ -1,0 +1,19 @@
+title: Sponsors
+template: sponsors/show
+layout: layout
+mount: 88c467f5-488a-4f7a-820b-781e07055d30
+taxonomies:
+  - sponsor_level
+revisions: false
+route: '{mount}/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+structure:
+  root: false
+  slugs: true
