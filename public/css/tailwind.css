@@ -1496,6 +1496,10 @@ h1 {
     padding-top: 10rem !important;
   }
 
+  .lg\:pt-12 {
+    padding-top: 3rem !important;
+  }
+
   .lg\:text-xl {
     font-size: 1.25rem !important;
     line-height: 1.75rem !important;
