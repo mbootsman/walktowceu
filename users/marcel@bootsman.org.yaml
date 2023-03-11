@@ -6,3 +6,10 @@ preferences:
   collections:
     pages:
       after_save: continue_editing
+    sponsors:
+      columns:
+        - title
+        - slug
+        - sponsor_level
+        - logo
+      after_save: continue_editing

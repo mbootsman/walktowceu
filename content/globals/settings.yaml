@@ -10,7 +10,7 @@ data:
     -
       id: le8d3co8
       name: Mastodon
-      url: 'https://toot.re/mbootsman'
+      url: 'https://toot.re/@mbootsman'
       icon: site/social-icons/mastodon.svg
     -
       id: JkyszUne

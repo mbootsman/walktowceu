@@ -69,4 +69,15 @@ sections:
           listable: hidden
           instructions_position: above
           visibility: visible
+      -
+        handle: sponsor_url
+        field:
+          input_type: text
+          antlers: false
+          display: URL
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
 title: Sponsor

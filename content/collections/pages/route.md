@@ -3,7 +3,7 @@ id: 085031a8-123b-4f11-a8c8-67f37f609fdc
 blueprint: page-route
 title: Route
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
-updated_at: 1678544708
+updated_at: 1678545641
 template: page-route
 text_field: 'Just a test'
 first_row_headers: true
@@ -75,151 +75,151 @@ schedule_de:
   -
     cells:
       - 'May 26th'
-      - null
-      - null
-      - null
+      - 'Bad Bentheim'
+      - '🛌 [Luc Princen](https://toot.re/@lucp)'
+      - '29.8'
   -
     cells:
       - 'May 27th'
-      - null
-      - null
-      - null
+      - 'Bad Bentheim'
+      - '🛌 (Rest day)'
+      - '--'
   -
     cells:
       - 'May 28th'
-      - null
-      - null
-      - null
+      - Riesenbeck
+      - '🛌 Maria'
+      - '34.9'
   -
     cells:
       - 'May 29th'
-      - null
-      - null
-      - null
+      - Osnabrück
+      - '🛌 Silke'
+      - '40.1'
   -
     cells:
       - 'May 30th'
-      - null
-      - null
-      - null
+      - Ostercappeln
+      - '🛌 Daniel'
+      - '12.3'
   -
     cells:
       - 'May 31st'
-      - null
-      - null
-      - null
+      - Espelkamp
+      - '🛌 Mittwald'
+      - '30.6'
   -
     cells:
       - 'June 1st'
-      - null
-      - null
-      - null
+      - Petershagen
+      - '🛌 Mittwald'
+      - '26.5'
   -
     cells:
       - 'June 2nd'
-      - null
-      - null
-      - null
+      - Barsinghausen
+      - '🛌 Saskia'
+      - '36.6'
   -
     cells:
       - 'June 3rd'
-      - null
-      - null
-      - null
+      - Hannover
+      - '🛌 Susanne & Ute'
+      - '27.4'
   -
     cells:
       - 'June 4th'
-      - null
-      - null
-      - null
+      - Hannover
+      - '🛌 Hansi (Rest day)'
+      - '3.6'
   -
     cells:
       - 'June 5th'
-      - null
-      - null
-      - null
+      - Peine
+      - '🛌 Hotel Stadt Peine'
+      - '39.4'
   -
     cells:
       - 'June 6th'
-      - null
-      - null
-      - null
+      - Meine
+      - '🛌 Lisa'
+      - '24.2'
   -
     cells:
       - 'June 7th'
-      - null
-      - null
-      - null
+      - Wolfsburg
+      - '🛌 [Tobias](https://www.einschlaf.de/)'
+      - '19.1'
   -
     cells:
       - 'June 8th'
-      - null
-      - null
-      - null
+      - Wolfsburg
+      - '🛌 [Tobias](https://www.einschlaf.de/) (Rest day)'
+      - '--'
   -
     cells:
       - 'June 9th'
-      - null
-      - null
-      - null
+      - Rühen
+      - '🛌 Olga'
+      - '11.8'
   -
     cells:
       - 'June 10th'
-      - null
-      - null
-      - null
+      - Ristedt
+      - '🛌 Sybille'
+      - '25.2'
   -
     cells:
       - 'June 11th'
-      - null
-      - null
-      - null
+      - Gardelegen
+      - '🛌 Hotel und Restaurant Café am Rathaus'
+      - '27'
   -
     cells:
       - 'June 12th'
-      - null
-      - null
-      - null
+      - Gardelegen
+      - '🛌 Hotel und Restaurant Café am Rathaus (Rest day)'
+      - '--'
   -
     cells:
       - 'June 13th'
-      - null
-      - null
-      - null
+      - Tangerhütte
+      - '🛌 Hotel am Rathaus'
+      - '32.6'
   -
     cells:
       - 'June 14th'
-      - null
-      - null
-      - null
+      - Tangerhütte
+      - '🛌 Hotel am Rathaus (Rest day)'
+      - '--'
   -
     cells:
       - 'June 15th'
-      - null
-      - null
-      - null
+      - Genthin
+      - '🛌 Hotel & Restaurant Stadt Genthin'
+      - '26.6'
   -
     cells:
       - 'June 16th'
-      - null
-      - null
-      - null
+      - 'Brandenburg an der Havel'
+      - '🛌 City Hotel Pension Brandenburg'
+      - '28.6'
   -
     cells:
       - 'June 17th'
-      - null
-      - null
-      - null
+      - 'Groß Kreutz'
+      - '🛌 Dormotel Havelland'
+      - '12.7'
   -
     cells:
       - 'June 18th'
-      - null
-      - null
-      - null
+      - Potsdam
+      - '🛌 Caspar Hübinger'
+      - '30.8'
   -
     cells:
       - 'June 19th'
-      - '🏁 *Berlin*'
-      - null
-      - null
+      - '🏁 **Berlin**'
+      - '🛌 [Estrel Berlin - WCEU Venue](https://www.estrel.com/en/convention-center.html)'
+      - '26.5'
 ---
