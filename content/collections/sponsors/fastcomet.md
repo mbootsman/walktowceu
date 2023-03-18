@@ -3,7 +3,7 @@ id: c9c56283-1870-4cb4-b6a3-f49ee09a14ce
 blueprint: sponsor
 title: Fastcomet
 logo:
-  - fastcomet_logo.png
+  - sponsors/fastcomet_logo.png
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
 updated_at: 1678546715
 subtitle: 'FastComet - High-performance SSD Cloud Hosting'

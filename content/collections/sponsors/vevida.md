@@ -3,7 +3,7 @@ id: 8a6812da-9e82-444a-80c3-2b9a11a81336
 blueprint: sponsor
 title: Vevida
 logo:
-  - vevida_logo.svg
+  - sponsors/vevida_logo.svg
 sponsor_level:
   - bronze-shoe
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68

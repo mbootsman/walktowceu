@@ -7,6 +7,6 @@ sponsor_level:
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
 updated_at: 1678547668
 logo:
-  - stickermule_logo.svg
+  - sponsors/stickermule_logo.svg
 ---
 https://www.stickermule.com/eu/uses?utm_source=sponsorship&utm_medium=referral&utm_campaign=WalktoWordcamp19

@@ -7,5 +7,10 @@ tree:
     entry: 8041c24a-ed4f-44ef-8343-2a391e6d94c6
   -
     entry: 88c467f5-488a-4f7a-820b-781e07055d30
+    children:
+      -
+        entry: 6b75aa78-278b-483a-a833-ba8e431e6498
   -
     entry: 085031a8-123b-4f11-a8c8-67f37f609fdc
+  -
+    entry: 2d48286f-28b5-4ccd-afc0-313d3d06b2a9

@@ -1,0 +1,163 @@
+title: 'News Bard'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: bard_content
+        field:
+          collapse: false
+          always_show_set_button: false
+          previews: true
+          smart_typography: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          inline: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          remove_empty_nodes: false
+          display: Content
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          sets:
+            audio:
+              display: Audio
+              fields:
+                -
+                  handle: audio_file
+                  field:
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: 'Audio file'
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    folder: audio
+            video:
+              display: Video
+              fields:
+                -
+                  handle: video
+                  field:
+                    display: Video
+                    type: video
+                    icon: video
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+            image:
+              display: Image
+              fields:
+                -
+                  handle: image
+                  field:
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: Image
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    max_files: 1
+                -
+                  handle: sponsor_logo
+                  field:
+                    mode: list
+                    container: assets
+                    folder: sponsors
+                    restrict: false
+                    allow_uploads: false
+                    show_filename: true
+                    display: 'Sponsor logo'
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+      -
+        handle: excerpt
+        field:
+          antlers: false
+          display: Excerpt
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: author
+        field:
+          mode: select
+          display: Author
+          type: users
+          icon: users
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+      -
+        handle: featured_image
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Featured Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible

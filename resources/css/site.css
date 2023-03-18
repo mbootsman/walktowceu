@@ -3,11 +3,6 @@ body {
     font-feature-settings: "frac" 1;
 }
 
-.bg-light-yellow {
-    background-color: #fbfbf1;
-}
-
-
 h1 {
     @apply text-4xl font-bold leading-none mb-16;
 }

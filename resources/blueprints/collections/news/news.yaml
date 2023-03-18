@@ -7,7 +7,10 @@ sections:
         handle: title
         field:
           type: text
+          required: true
           display: Title
+          validate:
+            - required
       -
         handle: content
         field:
@@ -30,3 +33,32 @@ sections:
           type: users
           display: Author
           default: current
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+      -
+        handle: featured_image
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Featured Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible

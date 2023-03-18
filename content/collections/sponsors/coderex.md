@@ -4,7 +4,7 @@ blueprint: sponsor
 title: Coderex
 subtitle: 'Expert Developers helping agencies to Scale Up'
 logo:
-  - coderex_logo.png
+  - sponsors/coderex_logo.png
 sponsor_level:
   - silver-shoe
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68

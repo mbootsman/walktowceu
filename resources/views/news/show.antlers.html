@@ -1,15 +1,81 @@
 <div class="max-w-5xl mx-auto relative mt-8 content">
     <article class="lg:py-8 max-w-5xl mx-auto">
-        <h1>{{ title }}</h1>
-        <div class="bg-gray-800 inline-block text-sm mb-16 pr-4 pl-16 uppercase tracking-widest text-white py-1 rounded-r-full">
+        <h1 class="pb-0 mb-4">{{ title }}</h1>
+
+        <div class="bg-gray-800 inline-block text-sm mb-4 pr-4 pl-4 uppercase tracking-widest text-white py-1 rounded-r-full">
             Published
-            {{ if topics }}
-                in {{ topics }}<a href="{{ url }}" class="text-teal-light no-underline hover:text-white">{{ title }}</a>{{ unless last }}, {{ /unless }}{{ /topics }}
+            {{ if author }}
+            {{ author }}
+            {{ if url }}
+            by <a target="_blank" class="text-white" href="{{author_url}}">{{ name }}</a>
+            {{ else }}
+            by {{ name }}
+            {{ /if }}
+
+            {{ /author}}
             {{ /if }}
             on {{ date format="M j, Y" }}
         </div>
+
         <div class="content">
-            {{ content | widont }}
+            {{ if featured_image }}
+            {{ featured_image }}
+            <img class="mt-0" src="{{ url }}" />
+            {{ /featured_image }}
+            {{ /if }}
+
+            {{ if bard_content }}
+            {{ bard_content }}
+            {{ if type == "text" }}
+                {{ text }}
+            
+            {{ elseif type == "audio" }}
+                    <div class="audio">
+                        {{ audio_file }}
+                        <audio controls>
+                        <source src="{{ url }}" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                        {{ /audio_file }}
+                    </div>
+
+            {{ elseif type=="video" }}
+            <!-- Youtube and Vimeo -->
+                <iframe width="50%" height="300" src="{{ video | embed_url }}" ...></iframe>
+            
+            {{ elseif type == "image" }}
+                {{ if image }}
+                {{ image }}
+                <img src="{{ url }}" alt="{{ alt }}" />
+                {{ /image }}
+                {{ /if }}
+
+                {{ if sponsor_logo }}
+                {{ sponsor_logo }}
+                <div class="flex justify-center"><img class="w-1/2" src="{{ url }}" alt="{{ alt }}" /></div>
+                {{ /sponsor_logo }}
+                {{ /if }}
+            
+            {{ /if }}
+
+            {{ /bard_content }}
+
+            {{ /if }}
+
+            {{ if content }}
+     
+            {{ content }}
+            {{ /if }}
+
+
+
+
+
         </div>
+
+        <div class="flex justify-center"><button class="bg-lime-500 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded">
+            <a class="no-underline text-white" href="/donate">Donate</a>
+        </button>
+    </div>
+
     </article>
 </div>

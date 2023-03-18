@@ -4,7 +4,7 @@ blueprint: sponsor
 title: Raidboxes
 subtitle: 'WordPress Hosting from real Experts'
 logo:
-  - raidboxes_logo.svg
+  - sponsors/raidboxes_logo.svg
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
 updated_at: 1678551996
 sponsor_level:
