@@ -16,7 +16,7 @@
                 <a href="{{ url }}" class="text-lg underline tracking-tight leading-tight font-bold">
                     {{ if featured_image }}
                     {{ glide :src="featured_image" width="600" height="300" fit="crop"}}
-                    <img src="{{ url }}" width="{{ width }}" height="{{ height }}">
+                    <img class="mb-2" src="{{ url }}" width="{{ width }}" height="{{ height }}">
                     {{ /glide }}
                     {{ /if  }}
                     {{ title | widont }}

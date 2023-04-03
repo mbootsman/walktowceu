@@ -68,7 +68,7 @@ sections:
                     visibility: visible
                     folder: audio
             video:
-              display: Video
+              display: Youtube
               fields:
                 -
                   handle: video
@@ -107,6 +107,40 @@ sections:
                     allow_uploads: false
                     show_filename: true
                     display: 'Sponsor logo'
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+            local_video:
+              display: 'Local Video'
+              fields:
+                -
+                  handle: local_video
+                  field:
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: 'Local Video'
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+            gallery:
+              display: Gallery
+              fields:
+                -
+                  handle: gallery_images
+                  field:
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: 'Gallery Images'
                     type: assets
                     icon: assets
                     listable: hidden
