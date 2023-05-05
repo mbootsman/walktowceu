@@ -10,69 +10,72 @@
         <h2 class="text-3xl italic tracking-tight">No news found!</h2>
         {{ /if }}
 
-        <div class="grid grid-cols-1 sm:grid-cols-3 max-w-5xl mx-auto relative border-green-200 border-y-4 py-8">
+        <div class="flex flex-wrap max-w-5xl mx-auto relative border-green-200 border-y-4 py-8">
             {{ news }}
-            <div class="mb-2 px-2">
-                <a href="{{ url }}" class="text-lg underline tracking-tight leading-tight font-bold">
+            <div class="lg:w-1/3 sm:w-1/2 py-4">
+                <div class="bg-white border border-1 border-gray-300 mx-2 ">
                     {{ if featured_image }}
-                    {{ glide :src="featured_image" width="600" height="300" fit="crop"}}
-                    <img class="mb-2" src="{{ url }}" width="{{ width }}" height="{{ height }}">
-                    {{ /glide }}
+                        <a href="{{ url }}">
+                            {{ glide :src="featured_image" width="600" height="330" fit="crop"}}
+                                <img class="mb-2" src="{{ url }}" width="{{ width }}" height="{{ height }}">
+                            {{ /glide }}
+                        </a>    
                     {{ /if  }}
-                    {{ title | widont }}
-                </a>
+                    <a href="{{ url }}" class="h-24 inline-block p-4 uppercase text-lg underline tracking-tight leading-tight font-bold">{{ title | widont }}</a>
+                <span class="p-4 mt-4 block">{{ date format="F jS, Y" }}</span>
+                </div>
             </div>
             {{ /news }}
         </div>
 
         {{ paginate }}
-        <ul class="pagination">
+        <ul class="my-4 text-center pagination">
             {{ if prev_page }}
-                <li><a href="{{ prev_page }}">&laquo;</a></li>
+                <li class="inline"><a class="underline" href="{{ prev_page }}">&laquo; Previous</a></li>
             {{ else }}
-                <li class="disabled"><span>&laquo;</span></li>
+                <li class="inline disabled"></li>
             {{ /if }}
     
             {{ links:segments }}
     
                 {{ first }}
                     {{ if page == current_page }}
-                        <li class="active"><span>{{ page }}</span></li>
+                        <li class="inline active"><span>{{ page }}</span></li>
                     {{ else }}
-                        <li><a href="{{ url }}">{{ page }}</a></li>
+                        <li class="inline"><a class="underline" href="{{ url }}">{{ page }}</a></li>
                     {{ /if }}
                 {{ /first }}
     
                 {{ if slider }}
-                    <li class="disabled"><span>...</span></li>
+                    <li class="inline disabled"><span>...</span></li>
                 {{ /if }}
     
                 {{ slider }}
                     {{ if page == current_page }}
-                        <li class="active"><span>{{ page }}</span></li>
+                        <li class="inline active"><span>{{ page }}</span></li>
                     {{ else }}
-                        <li><a href="{{ url }}">{{ page }}</a></li>
+                        <li class="inline"><a href="{{ url }}">{{ page }}</a></li>
                     {{ /if }}
                 {{ /slider }}
     
                 {{ if slider || (!slider && last) }}
-                    <li class="disabled"><span>...</span></li>
+                    <li class="inline disabled"><span>...</span></li>
                 {{ /if }}
     
                 {{ last }}
                     {{ if page == current_page }}
-                        <li class="active"><span>{{ page }}</span></li>
+                        <li class="inline active"><span>{{ page }}</span></li>
                     {{ else }}
-                        <li><a href="{{ url }}">{{ page }}</a></li>
+                        <li class="inline"><a href="{{ url }}">{{ page }}</a></li>
                     {{ /if }}
                 {{ /last }}
     
             {{ /links:segments }}
     
             {{ if next_page }}
-                <li><a href="{{ next_page }}">&raquo;</a></li>
+                <li class="inline"><a class="underline" href="{{ next_page }}">Next &raquo;</a></li>
             {{ else }}
-                <li class="disabled"><span>&raquo;</span></li>
+                <li class="inline disabled"></li>
             {{ /if }}
         </ul>
         {{ /paginate }}

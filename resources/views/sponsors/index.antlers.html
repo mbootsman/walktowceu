@@ -1,29 +1,58 @@
-<div class="max-w-5xl mx-auto relative mt-8">
+<div class="max-w-5xl mx-auto relative mt-8 content">
     <article class="py-8 max-w-5xl mx-auto">
         <header class="max-w-xl content">
             <h1 class="mb-4">Sponsors</h1>
         </header>
-        {{ collection:sponsors as="sponsors" }}
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 py-8">
-            {{ sponsors }}
-            <a href="{{ url }}">
-                {{ logo }}
-                <img height="285" src="{{ url }}" alt="{{ alt }}" />
-                {{ /logo }}
-                <div class="py-6 px-8">
-                    <h2 class="font-bold text-2xl leading-tight">
-                        {{ title }}
-                    </h2>
-                    <h3 class="font-bold text-2xl leading-tight">
-                        {{ subtitle }}
-                    </h3>
-                    <p class="text-xs text-gray-600 mt-4 flex items-center">
-                        {{ content }}
-                    </p>
+
+        <h2>Golden Shoe Sponsor</h2>
+        <div>
+             <div class="block mr-4">
+                {{ collection:sponsors taxonomy:sponsor_level="golden-shoe" }}
+                    {{ logo }}
+                    <a target="_blank" href="{{ sponsor_url }}"><img class="squiggle" src="{{ url }}" alt="{{ alt }}" /></a>
+                    {{ /logo }}
+                    <span class="inline-block my-4"><a href="{{ sponsor_url }}">{{ subtitle }}</a></span>
+                    {{ content }}
+                {{ /collection:sponsors }}
+            </div>
+        </div>
+
+        <h2>Silver Shoe Sponsors</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+            {{ collection:sponsors taxonomy:sponsor_level="silver-shoe" }}
+                <div>
+                    {{ logo }}
+                    <a target="_blank" href="{{ sponsor_url }}"><img class="squiggle" src="{{ url }}" alt="{{ alt }}" /></a>
+                    {{ /logo }}
+                    <span class="inline-block my-4"><a href="{{ sponsor_url }}">{{ subtitle }}</a></span>
+                    {{ content }}
                 </div>
-            </a>
-            {{ /sponsors }}
-        </section>
-        {{ /collection:sponsors }}
+            {{ /collection:sponsors }}
+        </div>
+
+        <h2>Bronze Shoe Sponsors</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {{ collection:sponsors taxonomy:sponsor_level="bronze-shoe" }}
+                <div>
+                {{ logo }}
+                <a target="_blank" href="{{ sponsor_url }}"><img class="squiggle" src="{{ url }}" alt="{{ alt }}" /></a>
+                {{ /logo }}
+                <span class="inline-block my-4"><a href="{{ sponsor_url }}">{{ subtitle }}</a></span>
+                {{ content }}
+                </div>
+            {{ /collection:sponsors }}
+        </div>
+
+        <h2>In-kind Sponsors</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            {{ collection:sponsors taxonomy:sponsor_level="in-kind" }}
+                <div>
+                    {{ logo }}
+                    <a target="_blank" href="{{ sponsor_url }}"><img class="squiggle" src="{{ url }}" alt="{{ alt }}" /></a>
+                    {{ /logo }}
+                </div>
+            {{ /collection:sponsors }}
+        </div>
+    
     </article>
 </div>

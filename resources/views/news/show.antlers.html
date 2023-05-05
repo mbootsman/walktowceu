@@ -2,7 +2,7 @@
     <article class="lg:py-8 max-w-5xl mx-auto">
         <h1 class="pb-0 mb-4">{{ title }}</h1>
 
-        <div class="bg-gray-800 inline-block text-sm mb-4 pr-4 pl-4 uppercase tracking-widest text-white py-1 rounded-r-full">
+        <div class="bg-gray-500 inline-block text-sm mb-4 pr-4 pl-4 uppercase tracking-widest text-white py-1 rounded-r-full">
             Published
             {{ if author }}
             {{ author }}
@@ -41,7 +41,7 @@
             {{ elseif type=="video" }}
             <!-- Youtube -->
             <div class="aspect-w-16 aspect-h-9"> 
-                <iframe src="{{ video | embed_url }}" width="1024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="{{ video | embed_url }}" width="1024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             
             {{ elseif type=="local_video" }}
@@ -103,5 +103,30 @@
 
     </article>
     
+    <div class="nextprev pb-4 columns-2">
+
+    {{ collection:previous in="news" as="posts" limit="1" sort="date:asc" }}
+ 
+    {{ if no_results }}
+    {{ /if }}
+   
+    {{ posts }}
+      <div>⬅ Previous post: <a class="underline" href="{{ url }}">{{ title }}</a></div>
+    {{ /posts }}
+   
+  {{ /collection:previous }}
+  
+  
+  {{ collection:next in="news" as="posts" limit="1" sort="date:asc" }}
+   
+    {{ if no_results }}{{ /if }}
+   
+    {{ posts }}
+      <div class="text-right"> Next post: <a class="underline" href="{{ url }}">{{ title }}</a> ➡</div>
+    {{ /posts }}
+   
+  {{ /collection:next }}
 </div>
+  </div>
 {{ partial:topsponsors }}
+

@@ -29,6 +29,7 @@ sections:
             - anchor
             - image
             - table
+            - code
           save_html: false
           inline: false
           toolbar_mode: fixed

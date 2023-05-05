@@ -19,3 +19,8 @@ preferences:
   assets:
     assets:
       mode: grid
+  nav:
+    content:
+      reorder: true
+      items:
+        'content::collections::news': '@move'

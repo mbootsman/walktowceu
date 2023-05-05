@@ -4,12 +4,15 @@ body {
 }
 
 h1 {
-    @apply text-4xl font-bold leading-none mb-16;
+    @apply uppercase text-2xl font-bold leading-none mb-16;
 }
 
+h2 {
+    @apply border-green-200 border-b-4 bg-amber-100 py-2 inline-block uppercase text-xs font-bold lg:text-lg w-full my-4;
+}
 .content {
     >h2 {
-        @apply text-2xl font-bold leading-none mt-12 py-6;
+        @apply uppercase text-2xl font-bold leading-none mt-12 py-6;
     }
 
     >h3 {
@@ -21,6 +24,10 @@ h1 {
     }
 
     >p {
+        @apply mb-6 text-lg;
+    }
+    
+    p {
         @apply mb-6 text-lg;
     }
 
@@ -107,7 +114,7 @@ h1 {
 /* Responsive Wangjangling */
 @screen lg {
     h1 {
-        @apply text-6xl;
+        @apply text-4xl uppercase;
     }
 
     .content {

@@ -5,10 +5,11 @@ title: Fastcomet
 logo:
   - sponsors/fastcomet_logo.png
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
-updated_at: 1678546715
+updated_at: 1682098333
 subtitle: 'FastComet - High-performance SSD Cloud Hosting'
 sponsor_level:
   - bronze-shoe
+sponsor_url: 'https://fastcomet.com/'
 ---
 We are FastComet, and we are among one of the few privately-owned, independent and rapidly growing global web hosting companies. It all started in 2013, and we evolved ever since into one of the top choices for web hosting service providers. With 70+ employees, operating in 8 data centers around the world, we continue to develop and improve our products portfolio and services thanks to our ever-growing and wonderful team. It has been a great JOURNEY so far and the best is yet to come!
 

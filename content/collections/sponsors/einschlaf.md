@@ -5,8 +5,8 @@ title: Einschlaf
 logo:
   - sponsors/einschlaf_logo.png
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
-updated_at: 1678547497
+updated_at: 1682098369
 sponsor_level:
   - in-kind
+sponsor_url: 'https://www.einschlaf.de/'
 ---
-https://www.einschlaf.de/

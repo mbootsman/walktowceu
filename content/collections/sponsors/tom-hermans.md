@@ -7,6 +7,6 @@ logo:
 sponsor_level:
   - in-kind
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
-updated_at: 1678547420
+updated_at: 1682098402
+sponsor_url: 'http://tomhermans.com/'
 ---
-http://tomhermans.com/

@@ -7,7 +7,8 @@ logo:
 sponsor_level:
   - bronze-shoe
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
-updated_at: 1678546626
+updated_at: 1682098298
+sponsor_url: 'https://vevida.nl'
 ---
 💪🏼 Together we stand for a strong WordPress Community 💪🏼
 

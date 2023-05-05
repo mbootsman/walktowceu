@@ -5,8 +5,8 @@ title: Siteground
 logo:
   - sponsors/siteground_logo.png
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
-updated_at: 1678547509
+updated_at: 1682098387
 sponsor_level:
   - in-kind
+sponsor_url: 'https://www.siteground.com/'
 ---
-https://www.siteground.com/

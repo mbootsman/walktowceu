@@ -6,12 +6,12 @@ subtitle: 'Kinsta - Premium WordPress, Application and Database hosting'
 logo:
   - sponsors/kinsta-logo-alpha-purple.png
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
-updated_at: 1678551830
+updated_at: 1682444887
 sponsor_level:
   - golden-shoe
-sponsor_url: 'https://kinsta.com/'
+sponsor_url: 'https://walktowc.eu/kinsta'
 ---
-Premium WordPress hosting for everyone, small or large
+**Your New Home for Modern Web Apps and Sites**
 
 We love it when people think, or should we say step 👟, outside the box! When our team saw that Marcel was walking to WordCamp Europe, and donating the funds to a good cause, we had to help.
 
