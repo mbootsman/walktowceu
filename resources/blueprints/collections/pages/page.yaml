@@ -35,6 +35,8 @@ sections:
         field:
           type: slug
           localizable: true
+          validate:
+            - 'unique_entry_value:{collection},{id},{site}'
       -
         handle: parent
         field:
