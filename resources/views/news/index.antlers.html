@@ -31,30 +31,30 @@
         {{ paginate }}
         <ul class="my-4 text-center pagination">
             {{ if prev_page }}
-                <li class="inline"><a class="underline" href="{{ prev_page }}">&laquo; Previous</a></li>
+                <li class="inline p-2 border"><a class="underline" href="{{ prev_page }}">&laquo; Previous</a></li>
             {{ else }}
-                <li class="inline disabled"></li>
+                <li class="inline disabled></li>
             {{ /if }}
     
             {{ links:segments }}
     
                 {{ first }}
                     {{ if page == current_page }}
-                        <li class="inline active"><span>{{ page }}</span></li>
+                        <li class="inline active p-2"><span>{{ page }}</span></li>
                     {{ else }}
-                        <li class="inline"><a class="underline" href="{{ url }}">{{ page }}</a></li>
+                        <li class="inline p-2 border"><a class="underline" href="{{ url }}">{{ page }}</a></li>
                     {{ /if }}
                 {{ /first }}
     
                 {{ if slider }}
-                    <li class="inline disabled"><span>...</span></li>
+                    <li class="inline disabled p-2 border"><span>...</span></li>
                 {{ /if }}
     
                 {{ slider }}
                     {{ if page == current_page }}
-                        <li class="inline active"><span>{{ page }}</span></li>
+                        <li class="inline active p-2 border border-green-200"><span>{{ page }}</span></li>
                     {{ else }}
-                        <li class="inline"><a href="{{ url }}">{{ page }}</a></li>
+                        <li class="inline p-2 border"><a href="{{ url }}">{{ page }}</a></li>
                     {{ /if }}
                 {{ /slider }}
     
@@ -73,7 +73,7 @@
             {{ /links:segments }}
     
             {{ if next_page }}
-                <li class="inline"><a class="underline" href="{{ next_page }}">Next &raquo;</a></li>
+                <li class="inline p-2 border"><a class="underline" href="{{ next_page }}">Next &raquo;</a></li>
             {{ else }}
                 <li class="inline disabled"></li>
             {{ /if }}

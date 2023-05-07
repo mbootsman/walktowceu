@@ -3,7 +3,7 @@ id: 085031a8-123b-4f11-a8c8-67f37f609fdc
 blueprint: page-route
 title: Route
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
-updated_at: 1678545641
+updated_at: 1683276333
 template: page-route
 text_field: 'Just a test'
 first_row_headers: true
@@ -223,3 +223,4 @@ schedule_de:
       - '🛌 [Estrel Berlin - WCEU Venue](https://www.estrel.com/en/convention-center.html)'
       - '26.5'
 ---
+In the map below, you can see the route I planned to walk. The total estimated distance is 731.2 km.

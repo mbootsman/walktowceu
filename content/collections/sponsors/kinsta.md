@@ -6,7 +6,7 @@ subtitle: 'Kinsta - Premium WordPress, Application and Database hosting'
 logo:
   - sponsors/kinsta-logo-alpha-purple.png
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
-updated_at: 1682444887
+updated_at: 1683277231
 sponsor_level:
   - golden-shoe
 sponsor_url: 'https://walktowc.eu/kinsta'
@@ -23,4 +23,4 @@ Kinsta hosts all types of sites, from small blogs all the way up to Fortune 500 
 
 We literally changed how support works. We don’t have different level tiers as many others do. Our entire team is made up of only the most talented WordPress developers and Linux hosting engineers. We are available 24x7 if you need help.
 
-[Learn more about why Kinsta is different.](https://kinsta.com/nl/)
+[Learn more about why Kinsta is different.](https://walktowc.eu/kinsta)

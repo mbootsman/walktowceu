@@ -1158,6 +1158,10 @@ h2 {
   padding-top: 8rem !important;
 }
 
+.pl-2 {
+  padding-left: 0.5rem !important;
+}
+
 .text-left {
   text-align: left !important;
 }
