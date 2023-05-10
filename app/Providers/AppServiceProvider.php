@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Statamic\Statamic;
+use Statamic\StaticSite\SSG;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,5 +27,11 @@ class AppServiceProvider extends ServiceProvider
     {
         // Statamic::script('app', 'cp');
         // Statamic::style('app', 'cp');
+
+        SSG::after(function () {
+            $from = public_path('img');
+            $to = config('statamic.ssg.destination').'/img';
+            app('files')->copyDirectory($from, $to);
+        });
     }
 }
