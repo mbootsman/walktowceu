@@ -1,4 +1,4 @@
-<div class="max-w-5xl mx-auto relative py-16 lg:pt-12 lg:pb-32">
+<div class="max-w-5xl mx-auto relative py-8 lg:pt-12 lg:pb-4">
     <article class="content">
         <h1 class="mb-1">{{ title }}</h1>
         <p class="font-medium text-lg text-teal uppercase">{{ subtitle }}</p>
@@ -6,7 +6,7 @@
     </article>
 </div>
 
-<div class="max-w-5xl mx-auto mb-32">
+<div class="max-w-5xl mx-auto mb-4">
     {{ collection:news limit="6" as="news" }}
         {{ if no_results }}
             <h2 class="text-3xl italic tracking-tight">Nothing here</h2>
@@ -32,5 +32,4 @@
             <p class="mx-2"><a class="underline" href="/news/"">See all the blogs</a></p>
         </div>
     {{ /collection:news }}
-    
 </div>

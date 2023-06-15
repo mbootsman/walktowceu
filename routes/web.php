@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 // Route::statamic('example', 'example-view', [
 //    'title' => 'Example'
 // ]);
+Route::statamic('news', 'news.index', ['load' => 'b9e4bfe3-9c12-4553-b7ef-f43c22ffaa63']);
