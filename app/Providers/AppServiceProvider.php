@@ -76,7 +76,7 @@ class AppServiceProvider extends ServiceProvider
         $url = '/news';
 
         // The number of entries per page, according to your collection tag.
-        $perPage = 10;
+        $perPage = 6;
 
         // The total number of entries in the collection.
         // Make sure to mimic whatever params/filters are on the collection tag.
