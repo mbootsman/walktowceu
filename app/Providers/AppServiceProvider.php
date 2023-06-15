@@ -29,11 +29,10 @@ class AppServiceProvider extends ServiceProvider
         }   
 
         SSG::after(function () {
-    $from = public_path('img');
-    $to = config('statamic.ssg.destination').'/img';
-
-    app('files')->copyDirectory($from, $to);
-});
+            $from = public_path('img');
+            $to = config('statamic.ssg.destination').'/img';
+            app('files')->copyDirectory($from, $to);
+        });
     }
 
     private function bootSsg()
