@@ -1,0 +1,20 @@
+[[redirects]]
+  from = "/2019/05/22/stage-3-amersfoort/"
+  to = "/2019/05/21/stage-3-amersfoort/"
+  status = 301 
+
+[[redirects]]
+  from = "/2019/06/03/day-15-barsinghausen/"
+  to = "/2019/06/02/day-15-barsinghausen/"
+  status = 301 
+
+[[redirects]]
+  from = "/2019/06/08/day-20-wolfsburg/"
+  to = "/2019/06/07/day-20-wolfsburg/"
+  status = 301 
+
+# Affiliate links
+[[redirects]]
+  from = "/kinsta"
+  to = "https://kinsta.com/?kaid=XDWCJGGKAOSB"
+  status = 301 
