@@ -33,8 +33,6 @@ class AppServiceProvider extends ServiceProvider
     $to = config('statamic.ssg.destination').'/img';
 
     app('files')->copyDirectory($from, $to);
-    // or
-    app('files')->link($from, $to);
 });
     }
 
