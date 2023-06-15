@@ -7,6 +7,7 @@ use Illuminate\Support\ServiceProvider;
 use Statamic\Extensions\Pagination\LengthAwarePaginator;
 use Statamic\Facades\Entry;
 use Statamic\StaticSite\Generator;
+use Statamic\StaticSite\SSG;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,17 +24,18 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        SSG::after(function () {
-            $from = public_path('img');
-            $to = config('statamic.ssg.destination').'/img';
-            app('files')->copyDirectory($from, $to);
-        });
-        
         if ($this->app->runningInConsole()) {
             $this->bootSsg();
-        }
+        }   
 
-        
+        SSG::after(function () {
+    $from = public_path('img');
+    $to = config('statamic.ssg.destination').'/img';
+
+    app('files')->copyDirectory($from, $to);
+    // or
+    app('files')->link($from, $to);
+});
     }
 
     private function bootSsg()
