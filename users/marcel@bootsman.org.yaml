@@ -1,8 +1,8 @@
 name: 'Marcel Bootsman'
 super: true
-author_url: 'http://marcelbootsman.nl/'
+author_url: 'https://marcelbootsman.nl/'
 id: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
-password_hash: $2y$10$XDtQWxZ2eQE1O31VgSwD3.OSM3PYR40uotnOLxGnwnRLWQOnc1R8m
+password_hash: $2y$10$FEeLsZ6TEVwjVXRFKVIo3efOD2G9HL.jLuZXVhkCs2P0JciqU1eES
 preferences:
   collections:
     pages:
