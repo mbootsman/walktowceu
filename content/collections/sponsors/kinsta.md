@@ -6,10 +6,10 @@ subtitle: 'Kinsta - Premium WordPress, Application and Database hosting'
 logo:
   - sponsors/kinsta-logo-alpha-purple.png
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
-updated_at: 1683277231
+updated_at: 1703261950
 sponsor_level:
   - golden-shoe
-sponsor_url: 'https://walktowc.eu/kinsta'
+sponsor_url: 'https://kinsta.com/'
 ---
 **Your New Home for Modern Web Apps and Sites**
 
