@@ -42,6 +42,7 @@ return [
         public_path('assets') => 'assets',
         public_path('css') => 'css',
         public_path('js') => 'js',
+        public_path('img') => 'img',
     ],
 
     'symlinks' => [
@@ -77,7 +78,5 @@ return [
         'directory' => 'img',
         'override' => false,
     ],
-
-    'pagination_route' => '{url}/{page_name}/{page_number}',
 
 ];
