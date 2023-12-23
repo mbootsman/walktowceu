@@ -78,4 +78,6 @@ return [
         'override' => false,
     ],
 
+    'pagination_route' => '{url}/{page_name}/{page_number}',
+
 ];
