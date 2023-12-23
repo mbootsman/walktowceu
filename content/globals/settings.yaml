@@ -5,7 +5,7 @@ data:
     -
       id: 0j4yEo83
       name: Github
-      url: 'https://github.com/mbootsman/walktowceu'
+      url: 'https://github.com/mbootsman/walktowceu-ssg'
       icon: site/social-icons/github.svg
     -
       id: le8d3co8

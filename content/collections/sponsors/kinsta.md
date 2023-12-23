@@ -23,4 +23,4 @@ Kinsta hosts all types of sites, from small blogs all the way up to Fortune 500 
 
 We literally changed how support works. We don’t have different level tiers as many others do. Our entire team is made up of only the most talented WordPress developers and Linux hosting engineers. We are available 24x7 if you need help.
 
-[Learn more about why Kinsta is different.](https://walktowc.eu/kinsta)
+[Learn more about why Kinsta is different.](https://kinsta.com)

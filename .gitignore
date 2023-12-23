@@ -4,6 +4,7 @@
 /public/vendor/statamic
 /public/img
 /storage/*.key
+/storage/app
 /vendor
 .env
 .env.backup
