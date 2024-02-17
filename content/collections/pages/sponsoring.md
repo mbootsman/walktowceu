@@ -4,9 +4,9 @@ blueprint: page
 title: Sponsoring
 parent: 88c467f5-488a-4f7a-820b-781e07055d30
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
-updated_at: 1682096710
+updated_at: 1708102608
 ---
-On May 19th, I walked to Berlin to raise funds for [DonateWC](https://donatewc.org/).
+On May 19th, I walked to Berlin to raise funds for DonateWC.
 
 Because I'm self employed, I needed to ensure my business still runs after this adventure. I needed to hire a replacement to help my customers during my absence. 
 
@@ -19,7 +19,7 @@ Let's first explain the differences between sponsoring and donating. Donations a
 
 I walked for 32 days. Of those 32 days, 22 days are working days, and it will cost me around €5000 (and hopefully less) to find a full time replacement. If you would like to attach your brand to Walk To WordCamp Europe and help make this adventure a success, you can sponsor me. I will do something in return for you, as you can see in the package descriptions below.
 
-**If the total costs are lower than the amount of  sponsorship funds, the remaining funds will be added to the DonateWC donation.**
+**If the total costs are lower than the amount of  sponsorship funds, the remaining funds will be added to the donation.**
 
 Sponsor packages
 ----------------

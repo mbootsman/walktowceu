@@ -3,13 +3,13 @@ id: c8c5b774-bc95-4521-8d66-713dfb873e5f
 blueprint: sponsor
 title: Kinsta
 subtitle: 'Kinsta - Premium WordPress, Application, Database and Static site hosting'
-logo:
-  - sponsors/kinsta-logo-alpha-purple.png
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
-updated_at: 1703261950
+updated_at: 1708169089
 sponsor_level:
   - golden-shoe
 sponsor_url: 'https://kinsta.com/'
+logo:
+  - sponsors/kinsta-logo.svg
 ---
 **Your New Home for Modern Web Apps and Sites**
 
