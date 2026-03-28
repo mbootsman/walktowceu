@@ -71,7 +71,7 @@ class AppServiceProvider extends ServiceProvider
 
         // The total number of entries in the collection.
         // Make sure to mimic whatever params/filters are on the collection tag.
-        $total = Entry::query()->where('collection', 'news')->where('status', 'published')->count();
+        $total = Entry::query()->where('collection', 'news')->whereStatus('published')->count();
 
         return collect(range(1, ceil($total / $perPage)))
             ->map(fn ($page) => $url.'/page/'.$page)
