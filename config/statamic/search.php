@@ -27,7 +27,7 @@ return [
 
         'default' => [
             'driver' => 'local',
-            'searchables' => 'all',
+            'searchables' => ['collection:pages', 'collection:news', 'collection:sponsors', 'collection:modules'],
             'fields' => ['title'],
         ],
 

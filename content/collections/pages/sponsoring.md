@@ -4,9 +4,9 @@ blueprint: page
 title: Sponsoring
 parent: 88c467f5-488a-4f7a-820b-781e07055d30
 updated_by: 8c7ebfc4-94cb-4f6f-bcea-fa48faf79a68
-updated_at: 1708102608
+updated_at: 1774692666
 ---
-On May 19th, I walked to Berlin to raise funds for DonateWC.
+On May 19th, 2019, I walked to Berlin to raise funds for DonateWC.
 
 Because I'm self employed, I needed to ensure my business still runs after this adventure. I needed to hire a replacement to help my customers during my absence. 
 

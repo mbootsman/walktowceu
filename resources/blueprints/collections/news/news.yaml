@@ -42,7 +42,7 @@ sections:
           type: slug
           localizable: true
           validate:
-            - 'unique_entry_value:{collection},{id},{site}'
+            - 'new \Statamic\Rules\UniqueEntryValue({collection}, {id}, {site})'
       -
         handle: date
         field:
