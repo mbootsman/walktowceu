@@ -15,15 +15,19 @@
         "cross-env": "^7.0",
         "css-loader": "^5.2.7",
         "laravel-mix": "^6.0",
-        "postcss": "^8.4.5",
+        "postcss": "^8.5.23",
         "postcss-import": "^14.0.1",
-        "tailwindcss": "^3.0.23"
+        "tailwindcss": "^3.0.23",
+        "webpack-dev-server": "^5.2.6"
     },
     "dependencies": {
         "alpinejs": "^3.9.1"
     },
     "overrides": {
         "body-parser": ">=1.20.3",
-        "webpack-dev-server": ">=5.2.1"
+        "webpack-dev-server": "^5.2.6",
+        "svgo": ">=2.8.3",
+        "brace-expansion": ">=1.1.18",
+        "fast-uri": ">=3.1.6"
     }
 }
