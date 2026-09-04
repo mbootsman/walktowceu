@@ -18,16 +18,20 @@
         "postcss": "^8.5.23",
         "postcss-import": "^14.0.1",
         "tailwindcss": "^3.0.23",
+        "webpack": "5.105.4",
         "webpack-dev-server": "^5.2.6"
     },
     "dependencies": {
         "alpinejs": "^3.9.1"
     },
     "overrides": {
+        "@babel/plugin-transform-modules-systemjs": "^7.29.4",
         "body-parser": ">=1.20.3",
         "webpack-dev-server": "^5.2.6",
+        "webpack": "5.105.4",
         "svgo": ">=2.8.3",
         "brace-expansion": ">=1.1.18",
-        "fast-uri": ">=3.1.6"
+        "fast-uri": ">=3.1.6",
+        "elliptic": "^6.6.1"
     }
 }
