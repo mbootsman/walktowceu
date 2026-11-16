@@ -17,9 +17,11 @@ preferences:
       after_save: continue_editing
     news:
       after_save: continue_editing
+      view: list
   assets:
     assets:
       mode: grid
+      per_page: 500
   nav:
     content:
       reorder: true
