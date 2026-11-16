@@ -1,19 +1,1 @@
 title: Settings
-data:
-  site_name: 'Walk to WCEU'
-  social:
-    -
-      id: 0j4yEo83
-      name: Github
-      url: 'https://github.com/mbootsman/walktowceu-ssg'
-      icon: site/social-icons/github.svg
-    -
-      id: le8d3co8
-      name: Mastodon
-      url: 'https://toot.re/@mbootsman'
-      icon: site/social-icons/mastodon.svg
-    -
-      id: JkyszUne
-      name: Email
-      url: 'mailto:marcel@bootsman.org'
-      icon: site/social-icons/email.svg
