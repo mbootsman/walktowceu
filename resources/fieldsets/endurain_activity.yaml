@@ -1,0 +1,47 @@
+title: 'Endurain activity'
+fields:
+  -
+    handle: activity_url
+    field:
+      type: text
+      input_type: url
+      display: 'Activity URL'
+      instructions: 'Paste the public link of the activity from Endurain. The activity must be set to Public.'
+      instructions_position: above
+      placeholder: 'https://logbook.marcelbootsman.nl/activity/123'
+      required: true
+      validate:
+        - required
+        - 'new \App\Rules\EndurainUrl'
+      listable: hidden
+  -
+    handle: label
+    field:
+      type: text
+      display: 'Button label'
+      instructions: 'Optional. Leave empty to use "View this activity on my logbook".'
+      instructions_position: above
+      placeholder: 'View this activity on my logbook'
+      listable: hidden
+  -
+    handle: activity_type
+    field:
+      type: button_group
+      display: 'Activity type'
+      instructions: 'Shown as an icon on the button.'
+      instructions_position: above
+      options:
+        walking: Walking
+        cycling: Cycling
+        skiing: Skiing
+        ice_skating: 'Ice skating'
+        other: Other
+      default: walking
+      listable: hidden
+  -
+    handle: new_tab
+    field:
+      type: toggle
+      display: 'Open in a new tab'
+      default: true
+      listable: hidden

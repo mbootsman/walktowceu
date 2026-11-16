@@ -85,6 +85,9 @@
                     </div>
                 </div>
             </section>
+
+            {{ elseif type == "endurain_activity" }}
+                {{ partial:endurain_button }}
             {{ /if }}
             {{ /bard_content }}
 
@@ -92,6 +95,12 @@
 
             {{ if content }}
               {{ content }}
+            {{ /if }}
+
+            {{ if endurain_activity:activity_url }}
+                {{ endurain_activity }}
+                    {{ partial:endurain_button }}
+                {{ /endurain_activity }}
             {{ /if }}
         </div>
 

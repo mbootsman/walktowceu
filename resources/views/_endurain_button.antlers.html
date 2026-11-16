@@ -1,0 +1,63 @@
+{{#
+    Endurain activity button.
+
+    Used by the "Endurain activity" Bard set and the endurain_activity
+    group field on the News Bard blueprint. Expects these variables in
+    the current context (see resources/fieldsets/endurain_activity.yaml):
+      activity_url   public Endurain activity URL (required to render)
+      label          button text (optional)
+      activity_type  walking | cycling | skiing | ice_skating | other
+      new_tab        open in a new tab (boolean)
+
+    Renders nothing when activity_url is empty.
+#}}
+{{ if activity_url }}
+<div class="my-8">
+    <a href="{{ activity_url | trim | sanitize }}"
+       {{ if new_tab }}target="_blank" rel="noopener noreferrer"{{ /if }}
+       class="inline-flex max-w-full items-center gap-3 rounded-full bg-teal px-5 py-3 text-base font-semibold leading-snug text-white no-underline shadow-sm transition-colors hover:bg-[#005f5e] hover:text-white focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal">
+        <svg class="h-6 w-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            {{ if activity_type:value == 'walking' }}
+                <circle cx="13" cy="4" r="2"/>
+                <path d="M12 7.5 10 14l3.5 3V22"/>
+                <path d="M10 14l-2.5 8"/>
+                <path d="M11.5 9 8 11.5V14"/>
+                <path d="M12 8.5l2 3 3 1"/>
+            {{ elseif activity_type:value == 'cycling' }}
+                <circle cx="5.5" cy="17" r="3.5"/>
+                <circle cx="18.5" cy="17" r="3.5"/>
+                <path d="M5.5 17 9 10h7l2.5 7"/>
+                <path d="M9 10l3 7H5.5"/>
+                <path d="M8 7h3"/>
+                <path d="M16 10l-1-3h2.5"/>
+            {{ elseif activity_type:value == 'skiing' }}
+                <circle cx="16" cy="4" r="2"/>
+                <path d="M15 7.5 11 11l3.5 2.5-1.5 4"/>
+                <path d="M11 11 7 9.5"/>
+                <path d="M15 7.5l3 3.5"/>
+                <path d="M7 9.5 4.5 17"/>
+                <path d="M2.5 18.5 20 21.5"/>
+            {{ elseif activity_type:value == 'ice_skating' }}
+                <path d="M7 3h5v7l6 2.5a2 2 0 0 1 1.5 2V17H7z"/>
+                <path d="M12 6h-2"/>
+                <path d="M12 9h-2"/>
+                <path d="M4 20.5h15.5a1.5 1.5 0 0 0 1.5-1.5"/>
+                <path d="M9 17v3.5M17 17v3.5"/>
+            {{ else }}
+                <path d="M4 20h16"/>
+                <path d="M7 16l4-5 3 3 3-6"/>
+                <circle cx="17" cy="6" r="1.5"/>
+            {{ /if }}
+        </svg>
+        <span class="min-w-0 break-words">{{ if label }}{{ label | sanitize }}{{ else }}View this activity on my logbook{{ /if }}</span>
+        {{ if new_tab }}
+        <svg class="h-4 w-4 shrink-0 opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M14 4h6v6"/>
+            <path d="M20 4 11 13"/>
+            <path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>
+        </svg>
+        <span class="sr-only">(opens in a new tab)</span>
+        {{ /if }}
+    </a>
+</div>
+{{ /if }}

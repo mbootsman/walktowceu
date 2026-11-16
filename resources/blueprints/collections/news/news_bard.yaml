@@ -147,6 +147,13 @@ sections:
                     listable: hidden
                     instructions_position: above
                     visibility: visible
+            endurain_activity:
+              display: 'Endurain activity'
+              instructions: 'A button linking to a public activity on the Endurain logbook.'
+              icon: link
+              fields:
+                -
+                  import: endurain_activity
       -
         handle: excerpt
         field:
@@ -198,3 +205,31 @@ sections:
           listable: hidden
           instructions_position: above
           visibility: visible
+      -
+        handle: endurain_activity
+        field:
+          type: group
+          display: 'Endurain activity'
+          instructions: 'Optional. Shows a logbook button below the post.'
+          instructions_position: above
+          listable: hidden
+          fullscreen: false
+          fields:
+            # Same fields as the endurain_activity fieldset, but the URL is
+            # optional here because not every post has an activity.
+            -
+              handle: activity_url
+              field: endurain_activity.activity_url
+              config:
+                required: false
+                validate:
+                  - 'new \App\Rules\EndurainUrl'
+            -
+              handle: label
+              field: endurain_activity.label
+            -
+              handle: activity_type
+              field: endurain_activity.activity_type
+            -
+              handle: new_tab
+              field: endurain_activity.new_tab
