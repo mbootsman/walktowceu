@@ -19,9 +19,9 @@ fields:
     field:
       type: text
       display: 'Button label'
-      instructions: 'Optional. Leave empty to use "View this activity on my logbook".'
+      instructions: 'Optional. Leave empty to use a text based on the activity type, such as "See the route and stats of this walk".'
       instructions_position: above
-      placeholder: 'View this activity on my logbook'
+      placeholder: 'See the route and stats of this walk'
       listable: hidden
   -
     handle: activity_type

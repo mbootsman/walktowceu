@@ -5,7 +5,8 @@
     group field on the News Bard blueprint. Expects these variables in
     the current context (see resources/fieldsets/endurain_activity.yaml):
       activity_url   public Endurain activity URL (required to render)
-      label          button text (optional)
+      label          button text (optional; defaults to a per-type text
+                     such as "See the route and stats of this walk")
       activity_type  walking | cycling | skiing | ice_skating | other
       new_tab        open in a new tab (boolean)
 
@@ -49,7 +50,7 @@
                 <circle cx="17" cy="6" r="1.5"/>
             {{ /if }}
         </svg>
-        <span class="min-w-0 break-words">{{ if label }}{{ label | sanitize }}{{ else }}View this activity on my logbook{{ /if }}</span>
+        <span class="min-w-0 break-words">{{ if label }}{{ label | sanitize }}{{ elseif activity_type:value == 'walking' }}See the route and stats of this walk{{ elseif activity_type:value == 'cycling' }}See the route and stats of this bike ride{{ elseif activity_type:value == 'skiing' }}See the route and stats of this ski day{{ elseif activity_type:value == 'ice_skating' }}See the route and stats of this skating session{{ else }}See the route and stats of this activity{{ /if }}</span>
         {{ if new_tab }}
         <svg class="h-4 w-4 shrink-0 opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
             <path d="M14 4h6v6"/>
