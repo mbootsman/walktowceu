@@ -27,3 +27,5 @@ preferences:
       reorder: true
       items:
         'content::collections::news': '@move'
+  theme: null
+  strict_accessibility: true
